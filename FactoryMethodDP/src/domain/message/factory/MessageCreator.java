@@ -14,7 +14,7 @@ import domain.message.Message;
 public abstract class MessageCreator {
     
     public Message getMessage(){
-        Message message = createMessage();
+        Message message = createMessage();//example: new JSONMessage();
         
         message.addDefaultHeaders();
         message.encrypt();
